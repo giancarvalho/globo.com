@@ -1,0 +1,304 @@
+/* estilos globais */
+body {
+  font-family: "Open Sans", sans-serif;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a:hover {
+  filter: brightness(1.15);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* estilos do topo */
+
+.topo {
+  width: 100%;
+  height: 103px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid;
+  border-color: #e6e6e6;
+  justify-content: center;
+}
+
+nav {
+  width: 1145px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+nav a {
+  margin: 25px;
+  letter-spacing: -0.8px;
+}
+
+#desktop {
+  display: block;
+  height: 59.5px;
+}
+
+#mobile {
+  display: none;
+}
+
+.websites {
+  display: flex;
+}
+
+.g1 {
+  color: #a80001;
+}
+
+.ge {
+  color: #06aa48;
+}
+
+.gshow {
+  color: #ff7f00;
+}
+
+.tech {
+  color: #666666;
+}
+
+.videos {
+  color: #0769de;
+}
+
+/* estilos gerais do conteudo   */
+
+.conteudo {
+  width: 1145px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39.5px;
+}
+
+.conteudo h1 {
+  font-size: 21.5px;
+  font-weight: bold;
+  letter-spacing: -0.045em;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.conteudo p {
+  font-size: 15.5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.conteudo img {
+  height: 118px;
+  width: 235px;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* estilos da caixa vermelha  */
+.vermelha {
+  width: 568px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vermelha a {
+  color: #cd150b;
+}
+
+/* estilos caixa vermelha - primeira caixa */
+.primeira {
+  height: 242.5px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e6e6e6;
+  align-items: center;
+}
+
+.primeira h1 {
+  font-size: 52px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 58px;
+}
+
+.primeira h2 {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+  margin: 23.5px 0px;
+}
+
+/* estilos caixa vermelha - segunda caixa */
+.segunda {
+  height: 257px;
+  display: flex;
+  border-bottom: 1px solid #e6e6e6;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.segunda div {
+  width: 171px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.segunda img {
+  width: 171px;
+  height: 96px;
+  border-radius: 4px;
+}
+
+/* estilos caixa vermelha - terceira caixa */
+
+.terceira {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.terceira div {
+  width: 171px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* estilo da caixa verde esportes  */
+
+.verde {
+  width: 291px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
+}
+
+.verde > div {
+  width: 235px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.verde a {
+  color: #06aa48;
+}
+
+/* estilo caixa laranja celebridades */
+
+.laranja {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.laranja > div {
+  width: 235px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.laranja a {
+  color: #ff8203;
+}
+
+/* adaptação dispositivos moveis */
+
+@media (max-width: 600px) {
+  /* mobile - estilo topo  */
+  .topo {
+    height: auto;
+    width: 100%;
+  }
+
+  .websites {
+    width: 100%;
+    padding: 20px 0px;
+    border-top: 1px solid #e6e6e6;
+    justify-content: center;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 15px;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  /* mobile - estilos conteudo  */
+  .conteudo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .conteudo div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0px 10px 0px;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .conteudo > div,
+  .vermelha > div {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  .conteudo img {
+    height: 67px;
+    width: 120px;
+    margin: 10px 10px 10px 2px;
+  }
+
+  .conteudo h1 {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .imagem {
+    display: flex;
+  }
+
+  /* mobile - materia principal */
+  .primeira h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
